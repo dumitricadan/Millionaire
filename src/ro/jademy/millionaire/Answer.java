@@ -7,6 +7,8 @@ public class Answer {
     private boolean isCorrect;
 
     public Answer(String answer, boolean isCorrect) {
+        this.answer = answer;
+        this.isCorrect = isCorrect;
 
     }
 
@@ -24,8 +26,7 @@ public class Answer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Answer answer1 = (Answer) o;
-        return isCorrect == answer1.isCorrect &&
-                Objects.equals(answer, answer1.answer);
+        return isCorrect == answer1.isCorrect && Objects.equals(answer, answer1.answer);
     }
 
     @Override

@@ -1,8 +1,13 @@
 package ro.jademy.millionaire;
 
 public class Player {
-   private String firstname;
+    private String firstname;
     private String lastname;
+
+    public Player(String firstname, String lastname) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
 
     public String getFirstname() {
         return firstname;
@@ -20,9 +25,4 @@ public class Player {
         this.lastname = lastname;
     }
 
-    public Player (String firstname, String lastname) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-
-    }
 }

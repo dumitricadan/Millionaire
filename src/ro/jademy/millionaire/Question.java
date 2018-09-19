@@ -1,4 +1,5 @@
 package ro.jademy.millionaire;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class Question {
         this.answerList = answerList;
     }
 
-    public List<Answer> getAnswerList () {
+    public List<Answer> getAnswerList() {
         return this.answerList;
     }
 
@@ -27,8 +28,8 @@ public class Question {
     }
 
 
-    public Answer getCorrectAnswer () {
-        for (Answer answer: answerList) {
+    public Answer getCorrectAnswer() {
+        for (Answer answer : answerList) {
             if (answer.isCorrect()) {
                 return answer;
             }
