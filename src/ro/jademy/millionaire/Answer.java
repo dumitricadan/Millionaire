@@ -3,10 +3,23 @@ package ro.jademy.millionaire;
 import java.util.Objects;
 
 public class Answer {
-    public String answer;
-    public boolean isCorrect;
+    private String answer;
+    private boolean isCorrect;
 
-    @Override
+    public Answer(String answer, boolean isCorrect) {
+
+    }
+
+    public String getAnswer() {
+        return this.answer;
+    }
+
+    public boolean isCorrect() {
+        return this.isCorrect;
+    }
+
+
+   /* @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -19,4 +32,5 @@ public class Answer {
     public int hashCode() {
         return Objects.hash(answer, isCorrect);
     }
+    */
 }
