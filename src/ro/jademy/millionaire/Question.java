@@ -8,29 +8,28 @@ public class Question {
     private int difficultyLevel;
     private List<Answer> answerList = new ArrayList<>();
 
+    public Question(String question, int difficultyLevel, List<Answer> answerList) {
+        this.question = question;
+        this.difficultyLevel = difficultyLevel;
+        this.answerList = answerList;
+    }
+
     public List<Answer> getAnswerList () {
         return this.answerList;
     }
-    public void setAnswerList(java.util.List<Answer> answerList) {
-        this.answerList = answerList;
-    }
+
     public int getDifficultyLevel() {
         return this.difficultyLevel;
     }
-    public void setDifficultyLevel(int difficultyLevel) {
-        this.difficultyLevel = difficultyLevel;
-    }
+
     public String getQuestion() {
         return this.question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
 
     public Answer getCorrectAnswer () {
         for (Answer answer: answerList) {
-            if (answer.isCorrect) {
+            if (answer.isCorrect()) {
                 return answer;
             }
         }
