@@ -9,7 +9,11 @@ public class Answer {
     public Answer(String answer, boolean isCorrect) {
         this.answer = answer;
         this.isCorrect = isCorrect;
+    }
 
+    public Answer(String answer) {
+        this.answer = answer;
+        this.isCorrect = false;
     }
 
     public String getAnswer() {

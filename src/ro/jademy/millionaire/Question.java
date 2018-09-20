@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Question {
-    public static final int MAX_LEVEL = 15;
+
     private String question;
     private int difficultyLevel;
     private List<Answer> answerList = new ArrayList<>();
