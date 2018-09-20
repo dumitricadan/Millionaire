@@ -15,7 +15,7 @@ public class Millionaire {
         List<Question> gameQuestions = getGameQuestions();
         // de fiecare data cand initializam jocul, primim un subset nou (random) de intrebari
         Game game = new Game(gameQuestions);
-        game.showQuestion();
+        game.askQuestion();
     }
 
     private static void initQuestions() {
