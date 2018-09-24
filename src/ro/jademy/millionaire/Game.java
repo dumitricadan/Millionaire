@@ -43,7 +43,7 @@ public class Game {
            if (chosenAnswer.equals(correctAnswer)) {
                System.out.println("FELICITARI, AI RASPUNS CORECT!");
            } else {
-               System.out.println("AI PIERDUT!");
+               System.out.println("RASPUNS GRESIT. AI PIERDUT!");
                System.exit(0);
            }
        }
@@ -56,10 +56,6 @@ public class Game {
                 System.out.println(answer.getAnswer());
             }
 
-    }
-
-    public void answerQuestion() {
-        // get user input and check if correct
     }
 
     public void fiftyFifty() {

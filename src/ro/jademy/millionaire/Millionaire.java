@@ -14,65 +14,66 @@ public class Millionaire {
 
         List<Question> gameQuestions = getGameQuestions();
         // de fiecare data cand initializam jocul, primim un subset nou (random) de intrebari
+        System.out.println("****** BINE AI VENIT LA VREI SA FII MILIONAR! ******");
         Game game = new Game(gameQuestions);
         game.askQuestion();
     }
 
     private static void initQuestions() {
         List<Answer> answer1 = new ArrayList<>();
-        answer1.add(new Answer("A. Paris", true));
-        answer1.add(new Answer("B. Bucharest"));
-        answer1.add(new Answer("C. Budapest"));
-        answer1.add(new Answer("D. Marseille"));
+        answer1.add(new CorrectAnswer("A. Paris"));
+        answer1.add(new WrongAnswer("B. Bucharest"));
+        answer1.add(new WrongAnswer("C. Budapest"));
+        answer1.add(new WrongAnswer("D. Marseille"));
         questions.add(new Question("Capitala Frantei este:", 1, answer1));
 
         List<Answer> answer2 = new ArrayList<>();
-        answer2.add(new Answer("A. Africa"));
-        answer2.add(new Answer("B. Asia", true));
-        answer2.add(new Answer("C. North America"));
-        answer2.add(new Answer("D. Antarctica"));
+        answer2.add(new WrongAnswer("A. Africa"));
+        answer2.add(new CorrectAnswer("B. Asia"));
+        answer2.add(new WrongAnswer("C. North America"));
+        answer2.add(new WrongAnswer("D. Antarctica"));
         questions.add(new Question("Cel mai mare continent este:", 2, answer2));
 
         List<Answer> answer3 = new ArrayList<>();
-        answer3.add(new Answer("A. 1899"));
-        answer3.add(new Answer("B. 1900"));
-        answer3.add(new Answer("C. 1918", true));
-        answer3.add(new Answer("D. 1919"));
+        answer3.add(new WrongAnswer("A. 1899"));
+        answer3.add(new WrongAnswer("B. 1900"));
+        answer3.add(new CorrectAnswer("C. 1918"));
+        answer3.add(new WrongAnswer("D. 1919"));
         questions.add(new Question("Marea Unire s-a realizat in:", 3, answer3));
 
         List<Answer> answer4 = new ArrayList<>();
-        answer4.add(new Answer("A. 8884m"));
-        answer4.add(new Answer("B. 8488m"));
-        answer4.add(new Answer("C. 8848m", true));
-        answer4.add(new Answer("D. 8888m"));
+        answer4.add(new WrongAnswer("A. 8884m"));
+        answer4.add(new WrongAnswer("B. 8488m"));
+        answer4.add(new CorrectAnswer("C. 8848m"));
+        answer4.add(new WrongAnswer("D. 8888m"));
         questions.add(new Question("Cel mai inalt munte din lume are:", 4, answer4));
 
         List<Answer> answer5 = new ArrayList<>();
-        answer5.add(new Answer("A. Marte", true));
-        answer5.add(new Answer("B. Saturn"));
-        answer5.add(new Answer("C. Jupiter"));
-        answer5.add(new Answer("D. Neptun"));
+        answer5.add(new CorrectAnswer("A. Marte"));
+        answer5.add(new WrongAnswer("B. Saturn"));
+        answer5.add(new WrongAnswer("C. Jupiter"));
+        answer5.add(new WrongAnswer("D. Neptun"));
         questions.add(new Question("Ce planeta este supranumita Planeta Rosie?", 1, answer5));
 
         List<Answer> answer6 = new ArrayList<>();
-        answer6.add(new Answer("A. China"));
-        answer6.add(new Answer("B. Japonia", true));
-        answer6.add(new Answer("C. Rusia"));
-        answer6.add(new Answer("D. Moldova"));
+        answer6.add(new WrongAnswer("A. China"));
+        answer6.add(new CorrectAnswer("B. Japonia"));
+        answer6.add(new WrongAnswer("C. Rusia"));
+        answer6.add(new WrongAnswer("D. Moldova"));
         questions.add(new Question("Ce tara e supranumita Tara Soarelui Rasare?", 2, answer6));
 
         List<Answer> answer7 = new ArrayList<>();
-        answer7.add(new Answer("A. New York"));
-        answer7.add(new Answer("B. Moscova"));
-        answer7.add(new Answer("C. Tokyo", true));
-        answer7.add(new Answer("D. Montreal"));
+        answer7.add(new WrongAnswer("A. New York"));
+        answer7.add(new WrongAnswer("B. Moscova"));
+        answer7.add(new CorrectAnswer("C. Tokyo"));
+        answer7.add(new WrongAnswer("D. Montreal"));
         questions.add(new Question("Cel mai populat oras din lume este:", 3, answer7));
 
         List<Answer> answer8 = new ArrayList<>();
-        answer8.add(new Answer("A. Rin"));
-        answer8.add(new Answer("B. Dunare"));
-        answer8.add(new Answer("C. Volga", true));
-        answer8.add(new Answer("D. Sena"));
+        answer8.add(new WrongAnswer("A. Rin"));
+        answer8.add(new WrongAnswer("B. Dunare"));
+        answer8.add(new CorrectAnswer("C. Volga"));
+        answer8.add(new WrongAnswer("D. Sena"));
         questions.add(new Question("Care este cel mai lung fluviu din Europa:", 4, answer8));
     }
 
